@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals", "prettier"],
+  "globals": {
+    "React": "readonly"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "no-unused-vars": "error",
+    "prettier/prettier": "warn",
+    "no-console": "warn",
+    "prefer-const": "error"
+  }
 }
